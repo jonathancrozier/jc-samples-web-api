@@ -85,9 +85,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\TodosController.cs" />
+    <Compile Include="Errors\ApiErrorCategory.cs" />
+    <Compile Include="Errors\ApiErrorCode.cs" />
+    <Compile Include="Errors\ApiErrorFactory.cs" />
+    <Compile Include="Errors\ApiErrorInstanceUrn.cs" />
+    <Compile Include="Errors\ApiException.cs" />
+    <Compile Include="Errors\ApiProblemDetails.cs" />
+    <Compile Include="Errors\ApiValidationActionFilter.cs" />
+    <Compile Include="Errors\Base\ProblemDetails.cs" />
+    <Compile Include="Errors\Extensions\HttpStatusCodeExtensions.cs" />
+    <Compile Include="Errors\Handlers\ApiExceptionHandler.cs" />
+    <Compile Include="Errors\Loggers\ApiExceptionLogger.cs" />
+    <Compile Include="Errors\ValidationError.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Todo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -99,11 +114,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
