@@ -1,5 +1,5 @@
-﻿using JC.Samples.FlurlConsoleDemo.Models;
-using JC.Samples.Web.Api.Errors;
+﻿using JC.Samples.Web.Api.Errors;
+using JC.Samples.Web.Api.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;

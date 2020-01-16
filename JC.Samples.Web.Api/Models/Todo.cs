@@ -1,4 +1,4 @@
-﻿namespace JC.Samples.FlurlConsoleDemo.Models
+﻿namespace JC.Samples.Web.Api.Models
 {
     /// <summary>
     /// Represents a 'Todo' item.
